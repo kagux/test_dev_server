@@ -1,4 +1,4 @@
 FROM busybox
 ENV VERSION DEV
-ENV BRANCH B1
+ENV BRANCH B2
 ADD test.txt /test.txt
