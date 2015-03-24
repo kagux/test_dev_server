@@ -1,3 +1,4 @@
 FROM busybox
 ENV VERSION DEFAULT
+ENV BRANCH MASTER
 ADD test.txt /test.txt
