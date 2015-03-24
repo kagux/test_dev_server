@@ -1,0 +1,3 @@
+FROM busybox
+ADD test.txt /test.txt
+RUN touch /2.tmp
