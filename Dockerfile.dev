@@ -1,4 +1,6 @@
-FROM busybox
+FROM debian
 ENV VERSION DEV
 ENV BRANCH B2
 ADD test.txt /test.txt
+RUN apt-get update && apt-get install -y openssh-server
+CMD ["/usr/sbin/sshd", "-D"]
